@@ -1,0 +1,94 @@
+main {
+  @include flex(center, center, column);
+  min-height: 98vh;
+  min-width: auto;
+}
+.box {
+  background-color: $card-background;
+  padding: 2.3rem;
+  border-radius: 1.5rem;
+  box-shadow: 5px 5px 50px 10px hsl(216, 53%, 7%);
+}
+.image {
+  position: relative;
+}
+.overlay {
+  height: 296.06px;
+  width: auto;
+  border-radius: 1.5rem;
+  position: absolute;
+  background-color: rgba($color: $cyan, $alpha: 0.6);
+  object-fit: scale-down;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.picture {
+  height: 296.06px;
+  width: auto;
+  border-radius: 1.5rem;
+}
+.description p {
+  line-height: 2.7rem;
+}
+.info-row {
+  @include flex(right, right, row);
+  margin: $margin-box;
+  flex: 1 1 20rem;
+}
+.price-row {
+  @include flex(left, left, row);
+  flex: 1 1 20rem;
+}
+.price-row p {
+  font-weight: $bold;
+  color: $cyan;
+  padding: 0 0.5rem;
+}
+
+.time-row {
+  @include flex(right, center, row);
+  align-items: flex-end;
+}
+
+.time-row p {
+  padding-left: 0.5rem;
+}
+hr {
+  height: 0.2rem;
+  background-color: $line-color;
+  border: none;
+}
+.author {
+  @include flex(left, center, row);
+  flex: 1 1 2rem;
+  margin: $margin-box;
+}
+.author img {
+  height: 3.1em;
+  border: 1px;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  border-width: 1.5px;
+}
+p span {
+  font-weight: $bold;
+  color: $white;
+}
+.author p {
+  padding: 0 1rem;
+}
+
+/*Hover*/
+p span:hover {
+  color: $cyan;
+  cursor: pointer;
+}
+h1:hover {
+  color: $cyan;
+  cursor: pointer;
+}
+.overlay:hover {
+  cursor: pointer;
+  opacity: 100;
+}
