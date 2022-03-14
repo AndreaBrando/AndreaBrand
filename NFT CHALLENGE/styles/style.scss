@@ -1,0 +1,47 @@
+/*VARIABLES*/
+/*Font size*/
+$header: 2.1rem;
+$text: 1.8rem;
+$paragraph2: 1.5rem;
+/*Font weight*/
+$Outfit: "Outfit", sans-serif;
+$bold: 600;
+$medium: 400;
+$ligth: 300;
+/*Colours*/
+$gray-text: hsl(215, 51%, 70%);
+$cyan: hsl(178, 100%, 50%);
+$background: hsl(217, 54%, 11%);
+$card-background: hsl(216, 50%, 16%);
+$line-color: hsl(215, 32%, 27%);
+$white: hsl(0, 0%, 100%);
+/*OTHER*/
+$margin-box: 2.3rem 0;
+/*Mixin*/
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direction;
+}
+/*SCSS Files*/
+@import "global";
+@import "box";
+/*MEDIA QUERY*/
+@media screen and (max-width: 375px) {
+  h1 {
+    font-size: calc(2.5rem + 0.2vh);
+  }
+  p {
+    font-size: calc(1.8rem + 0.2vh);
+  }
+  .picture img {
+    height: calc(296.06px + 1.8rem);
+    object-fit: fill;
+  }
+  .overlay img {
+    height: calc(296.06px + 1.8rem);
+
+  }
+
+}
