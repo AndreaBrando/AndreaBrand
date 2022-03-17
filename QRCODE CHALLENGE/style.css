@@ -1,0 +1,89 @@
+/*GLOBAL*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*variables*/
+html {
+  --paragraph: 1em;
+  --text-color: hsl(220, 15%, 55%);
+  --background: hsl(212, 45%, 89%);
+  --box: hsl(0, 0%, 100%);
+  --headcolor: hsl(218, 44%, 22%);
+  --bold: 700;
+  --medium: 400;
+}
+
+body{
+  background-color: var(--background);
+}
+
+main{
+  min-height: 98vh;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card{  
+  box-shadow: 5px 5px 15px 1px hsl(213, 15%, 76%);
+  padding: 1em;
+  background-color: var(--box);
+  border-radius: 1.5rem;
+  width: 21em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+ }  
+header{
+flex: 1 1 32em;
+text-align: center;
+height: 5em;
+}
+
+.card img{
+max-width: 100%;
+  width: auto;
+  border-radius: 1.5em;
+}
+p{
+  font-size: var(--paragraph);
+  font-family: 'Outfit', sans-serif;
+  font-weight: var(--medium);
+  color: var(--text-color);
+}
+h1{
+  font-size: calc(1em * 1.5vh);
+  font-family: 'Outfit', sans-serif;
+  font-weight: var(--bold);
+  color: var(--headcolor);
+}
+header
+p,
+h1{
+max-width: 93%;
+margin: auto;
+padding: 0.6rem 0;
+}
+aside{
+  display: flex;
+  justify-content: center;
+}
+aside a{
+  text-decoration: none;
+}
+aside p{
+  text-align: center;
+  color: var(--headcolor);
+}
+@media screen and (max-width:375px){
+  aside p{
+    font-size:0.8em;
+  }
+  
+}
+
+
